@@ -1,0 +1,59 @@
+$break-xs: 576px;
+$break-small: 768px;
+$break-med: 992px;
+$break-lar: 1200px;
+
+
+.container {
+  margin: auto;
+  width: 100%;
+
+  @media (min-width: $break-xs) {
+    max-width: 540px;
+  }
+  @media (min-width: $break-small) {
+    max-width: 720px;
+  } 
+  @media (min-width: $break-med) {
+    max-width: 960px;
+  }
+  @media (min-width: $break-lar) {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  width: 100%;
+  display: block;
+  @include clearfix;
+}
+
+@mixin layout-item {
+  float:left;
+  @media (max-width: $break-small) {
+    max-width: 100%;
+    margin: auto 1.6rem;
+  } 
+}
+
+.w-75 {
+  @include layout-item;
+  max-width: 75%;
+}
+.w-50 {
+  @include layout-item;
+  max-width: 50%;
+}
+.w-33 {
+  @include layout-item;
+  max-width: 33.333%;
+}
+.w-25 {
+  @include layout-item;
+  max-width: 25%;
+}
+
+@mixin vertical-margin {
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+}

@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background: url(../ch-theme/images/space.jpg) center top fixed #000;
+  background-size: cover;
+  @media (max-width: 768px) {
+    background-size: auto 100vh;
+    background: url(../ch-theme/images/space-mobile.jpg) center top fixed #000;
+  }
+}
+
+body {
+  font-family: $main-font;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+	background: url(../ch-theme/images/charles-hopkins-ventura-hills.png) no-repeat center bottom;
+	background-size: contain;
+	width:100%;
+}

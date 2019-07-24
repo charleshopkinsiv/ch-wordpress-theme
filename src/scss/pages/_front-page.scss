@@ -1,0 +1,236 @@
+#top-sky {
+	background-image: linear-gradient(rgba(38, 120, 193, 1) 0%, rgba(255,255,255, .9) 30%, rgba(38, 120, 193, .8) 83%, rgba(0,0,0,0));
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px -.4rem  .4rem  #000;
+  color: #fff;
+  line-height: 1;
+  @include fill;
+
+  h3 {
+    font-family: $main-font;
+    font-size: 2.4rem;
+  }
+
+  h1, h3 {
+    @media only screen and (min-width: $break-small) {
+      animation: leftToRight 20s linear infinite;
+    }
+  }
+
+
+  #jet {
+    z-index: 89;
+    overflow-x: hidden;
+    height: 31px;
+    position: absolute;
+    left: 0;
+    top: 10rem;
+    animation: jetFly 10s infinite linear;
+  }
+}
+
+#top-content {
+  border: .4rem solid #000;
+  background: rgba(255, 255, 255, .7);
+  text-shadow: 0 .15rem .4rem #fff;
+  @include vertical-margin;
+  @include rounded-corners;
+
+  .w-50, .w-33, .w-25 {
+    padding: 1.6rem;
+  }
+  h4 {
+    color: #000;
+    text-align: left;
+  }
+  a {
+    color: #004683;
+    &:hover {
+      color: #000;
+      text-decoration: none;     
+    }
+  }
+}
+
+#projects {
+  @include vertical-margin;
+
+  .carousel-cell.home-car {
+    width: 25%;
+    text-align: center;
+
+
+    @media screen and (max-width: $break-small) {
+      width: 70%;
+      margin: auto 15%;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+    &:active {
+      opacity: .1;
+    }
+
+    p {
+      font-family: $title-font;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1));
+      color: #000;
+      border-left: .05rem solid rgb(128, 128, 128);
+      border-right: .05rem solid rgb(128, 128, 128);
+    }
+    h3 {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    img {
+      width: 100%;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#blog-feed {
+  @include vertical-margin;
+  
+  .blog-post {
+    padding: 0;
+
+    &:hover {
+      opacity: .5;
+      transform: translateY(-1rem);
+      box-shadow: 0 1rem 1rem #000;  
+    }
+    &:active {
+      opacity: 1;
+      transform: translateY(-.5rem);
+      box-shadow: 0 .5rem .5rem #000;	   
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    h4 {
+      color: #000;
+    }
+
+    .loop-item-inner {
+      background:#fff;
+      padding:3.6rem;
+      border:3.6rem solid #000;
+      opacity:0.7;
+      height:36rem;
+    
+      &:hover {
+        opacity:1;
+        cursor:pointer;
+        padding: 7.2rem;
+        border: none;
+        background: rgba(0,0,0,0);
+      }
+    
+      .divider2 {
+        height:32px;
+        border:0;
+        background: url(../charles-hopkins/images/divider2.png) no-repeat center;
+        background-size:contain;
+      }
+    }
+  }
+}
+
+#social {
+  text-align: center;
+
+  #ig-feed{
+    @include clearfix;
+    @media (max-width: $break-small) {
+      width: 90%;
+      margin: auto 5%;
+    } 
+
+    .w-16 {
+      width: 16.666%;
+      float:left;
+      @media (max-width: $break-small) {
+        width: 50%;
+      } 
+      
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%; 
+      }
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+  }
+  .fa-linkedin {
+    @include vertical-margin;
+  }
+}
+
+#contact-form {
+  @include vertical-margin;
+  @include clearfix;
+
+  input, textarea {
+    font-family: $main-font;
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    margin: .8rem auto;
+    @include rounded-corners;
+    border: none;
+    opacity: .9;
+  }
+  textarea {
+    height: 12rem;
+  }
+  button {
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    float: right;
+    border: none;
+    background: #fff;
+    @include rounded-corners;
+
+    &:hover {
+      transform: translateY(-.4rem);
+      opacity: .9;
+      cursor: pointer;
+    }
+    &:active {
+      transform: translateY(-.2rem);
+      opacity: .5
+    }
+  }
+
+  #email-alert {
+    display: none;
+    color: green;
+    padding: 1.6rem;
+    margin: .8rem auto;
+    background: #fff;
+    opacity: .9;
+    @include rounded-corners;
+  }
+}

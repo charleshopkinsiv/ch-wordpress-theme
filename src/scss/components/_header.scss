@@ -1,0 +1,15 @@
+.header-bar {
+  @include clearfix;
+  width: 100%;
+  background: linear-gradient(to top, #000, #fff);
+  border: .4rem solid #000;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    h1 {
+      text-shadow: 0 0 .8rem #000;
+      animation: leftToRight 20s infinite linear;
+    }
+  }
+}

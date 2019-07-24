@@ -1,0 +1,33 @@
+.archive {
+  .site-main {
+    background: rgba(255, 255, 255, .7);
+  }
+
+  article {
+    margin-bottom: 4.8rem;
+  }
+
+  .entry-title {
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten(#000, 33%);
+        text-shadow: 0 -.2rem .4rem #000;
+      }
+      &:active {
+        color: lighten(#000, 77%);
+        text-shadow: none;
+      }
+    }
+  }
+  .entry-content {
+    display:none;
+  }
+
+  h1 {
+    color: #000;
+    text-shadow: 0 -.2rem .4rem #fff;
+  }
+}

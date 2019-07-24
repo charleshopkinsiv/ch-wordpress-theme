@@ -1,0 +1,79 @@
+.site-main {
+  background: #fff;
+  @include nav-links;
+
+  .article-header {
+    border: 1.2rem solid #fff;
+  }
+
+  .entry-header {
+    h1 {
+      color: #000;
+      text-shadow: 0 0 .8rem #fff;
+    }
+  }
+
+  .entry-meta {
+    text-align: center;
+    background: rgba(255, 255, 255, .7);
+    border-top: .8rem solid #fff;
+
+    h4 {
+      display: inline;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .entry-content, .navigation, #comments {
+    padding: 3.2rem;
+  }
+
+  article{
+    p {
+      margin-bottom: 4.8rem;
+    }
+    img {
+      margin: auto;
+    }
+  } 
+
+
+
+  h1, h2, h3, h4 {
+    color: rgb(112, 112, 112);
+  }
+  #comments {
+    @include clearfix;
+
+    textarea {
+      font-family: $main-font;
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      margin: .8rem auto;
+      @include rounded-corners;
+      border: solid 1px #000;
+      opacity: .9;
+    }
+    input[type=submit] {
+      padding: .8rem 1.6rem;
+      font-size: 1.6rem;
+      float: right;
+      border: none;
+      background: #000;
+      color: #fff;
+      @include rounded-corners;
+  
+      &:hover {
+        transform: translateY(-.4rem);
+        opacity: .9;
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(-.2rem);
+        opacity: .5
+      }
+    }
+  }
+}

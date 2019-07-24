@@ -1,0 +1,35 @@
+@keyframes jetFly {
+	0% {
+		transform: translate(-10rem, 0);
+	}
+	50% {
+		transform: translate(50vw, 0);
+	}
+	100% {
+		transform: translate(100vw, 0);
+	}
+}
+
+@keyframes leftToRight {
+	0% {
+		transform: translateX(0);
+		text-shadow: 0 -.2rem  .4rem  #000;
+	}
+	25% {
+		transform: translateX(6rem);
+		text-shadow: -.4rem -.2rem  .4rem  #000;
+	}
+	50% {
+		transform: translateX(0);
+		text-shadow: 0 -.2rem  .4rem  #000;
+	}
+	75% {
+		transform: translateX(-6rem);
+		text-shadow: .4rem -.2rem  .4rem  #000;
+	}
+	100% {
+		transform: translateX(0);
+		text-shadow: 0 -.2rem  .4rem  #000;
+	}
+}
+

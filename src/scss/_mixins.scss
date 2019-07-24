@@ -1,0 +1,30 @@
+@mixin fill {
+  height:100vh;
+  
+  @media (max-width: $break-med) {
+    height:auto;
+    min-height:100vh;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin rounded-corners {
+  border-radius: .8rem;
+}
+
+@mixin nav-links {
+  a {
+    color: #004683;
+    &:hover {
+      color: #000;
+      text-decoration: none;     
+    }
+  }
+}

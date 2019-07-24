@@ -1,0 +1,45 @@
+#portfolio-content {
+  @media only screen and (min-width: $break-small) {
+    padding-right: 3.2rem;
+  }
+
+  h2 {
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten(#000, 33%);
+        text-shadow: 0 -.2rem .4rem #000;
+      }
+      &:active {
+        color: lighten(#000, 77%);
+        text-shadow: none;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+#portfolio-image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+// Tag Archive
+.portfolio-archive {
+  .row {
+    a {
+      text-decoration: none;
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
